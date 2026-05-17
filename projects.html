@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero&lt;/&gt;Knowledge — Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:ital,wght@0,300;0,400;0,600;0,800;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Zero&lt;<span>/</span>&gt;Knowledge</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="theme-toggle" id="themeToggle">
+      <span class="toggle-label" id="themeLabel">DARK</span>
+      <div class="toggle-track"><div class="toggle-thumb"></div></div>
+    </div>
+  </div>
+</nav>
+
+<!-- PROJECTS SECTION -->
+<div class="sec" id="projects">
+  <div class="sec-label reveal">// MY WORK</div>
+  <div class="divider reveal"></div>
+  <h2 class="sec-title reveal">What I've Built</h2>
+  <p class="sec-sub reveal">Each project = one day. A real skill learned, then shipped immediately.</p>
+  
+  <div class="projects-grid">
+    <div class="project-card reveal" onclick="openModal('Portfolio Foundation')">
+      <div class="project-icon">📁</div>
+      <div class="project-day">DAY 01</div>
+      <h3>Portfolio Foundation</h3>
+      <p>First-ever HTML page. Semantic structure, CSS reset, and a navbar that actually works.</p>
+      <div class="project-tags">
+        <span>HTML5</span>
+        <span>CSS3</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal" onclick="openModal('Typewriter Effect')">
+      <div class="project-icon">⌨️</div>
+      <div class="project-day">DAY 07</div>
+      <h3>Typewriter Effect</h3>
+      <p>Pure JS typewriter cycling multiple phrases with configurable speed and cursor blink.</p>
+      <div class="project-tags">
+        <span>JavaScript</span>
+        <span>DOM</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal" onclick="openModal('Scroll Reveal System')">
+      <div class="project-icon">🌊</div>
+      <div class="project-day">DAY 10</div>
+      <h3>Scroll Reveal System</h3>
+      <p>IntersectionObserver-powered reveal animations with staggered delays.</p>
+      <div class="project-tags">
+        <span>IntersectionObserver</span>
+        <span>CSS</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal" onclick="openModal('Animated Skill Bars')">
+      <div class="project-icon">📊</div>
+      <div class="project-day">DAY 12</div>
+      <h3>Animated Skill Bars</h3>
+      <p>CSS + JS skill bars that animate when scrolled into view with live counters.</p>
+      <div class="project-tags">
+        <span>CSS Animation</span>
+        <span>JavaScript</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal" onclick="openModal('Glassmorphism Modals')">
+      <div class="project-icon">💎</div>
+      <div class="project-day">DAY 13</div>
+      <h3>Glassmorphism Modals</h3>
+      <p>Dynamic modals with backdrop blur, slide-up animation, and keyboard navigation.</p>
+      <div class="project-tags">
+        <span>Glassmorphism</span>
+        <span>backdrop-filter</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal" onclick="openModal('Light / Dark Mode')">
+      <div class="project-icon">🌙</div>
+      <div class="project-day">DAY 14</div>
+      <h3>Light / Dark Mode</h3>
+      <p>Full theme switching via CSS variables + localStorage. One click, total transformation.</p>
+      <div class="project-tags">
+        <span>CSS Variables</span>
+        <span>localStorage</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL for Day 15 -->
+<div class="modal-overlay" id="projectModal">
+  <div class="modal-container">
+    <button class="modal-close" id="closeModal">&times;</button>
+    <div class="modal-icon" id="modalIcon">📁</div>
+    <div class="modal-day" id="modalDay">DAY 01</div>
+    <h2 class="modal-title" id="modalTitle">Project Title</h2>
+    <p class="modal-description" id="modalDescription">Project description goes here...</p>
+    <div class="modal-tech" id="modalTech"></div>
+    <div class="modal-lessons" id="modalLessons"></div>
+    <button class="modal-live-btn" id="modalLiveBtn">🔗 View Live Demo</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>Built line by line · <em>Zero&lt;/&gt;Knowledge</em> · Day 15 of 100 · From Zero to Hero</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

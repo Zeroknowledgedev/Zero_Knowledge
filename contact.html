@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero&lt;/&gt;Knowledge — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:ital,wght@0,300;0,400;0,600;0,800;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Zero&lt;<span>/</span>&gt;Knowledge</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="theme-toggle" id="themeToggle">
+      <span class="toggle-label" id="themeLabel">DARK</span>
+      <div class="toggle-track"><div class="toggle-thumb"></div></div>
+    </div>
+  </div>
+</nav>
+
+<!-- CONTACT SECTION -->
+<div class="alt-bg">
+<div class="sec" id="contact">
+  <div class="sec-label reveal">// GET IN TOUCH</div>
+  <div class="divider reveal"></div>
+  <h2 class="sec-title reveal">Let's Connect</h2>
+  <p class="sec-sub reveal">Following the journey? Want to collaborate? Drop a message.</p>
+  
+  <div class="contact-grid">
+    <div class="contact-form reveal">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="Zero Knowledge" id="contactName">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="hello@example.com" id="contactEmail">
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea rows="4" placeholder="What's on your mind?" id="contactMessage"></textarea>
+      </div>
+      <button class="btn-p" onclick="sendMessage()">Send Message ↗</button>
+    </div>
+    
+    <div class="contact-info reveal" style="transition-delay:.15s">
+      <p>I document everything publicly. If you're on a similar journey — learning from scratch — I want to hear from you.</p>
+      <div class="social-links-list">
+        <a href="https://www.instagram.com/zero_knowledge.dev/" class="social-link" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram"></i>
+          <div>
+            <div class="social-name">Instagram</div>
+            <div class="social-handle">@zero_knowledge.dev</div>
+          </div>
+        </a>
+        <a href="https://youtube.com/@zeroknowledge-g6w" class="social-link" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-youtube"></i>
+          <div>
+            <div class="social-name">YouTube</div>
+            <div class="social-handle">@ZeroKnowledge</div>
+          </div>
+        </a>
+        <a href="https://github.com/Zeroknowledgedev" class="social-link" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+          <div>
+            <div class="social-name">GitHub</div>
+            <div class="social-handle">@Zeroknowledgedev</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer>Built line by line · <em>Zero&lt;/&gt;Knowledge</em> · Day 15 of 100 · From Zero to Hero</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
