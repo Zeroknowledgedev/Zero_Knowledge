@@ -2,7 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Zero&lt;/&gt;Knowledge — Projects</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:ital,wght@0,300;0,400;0,600;0,800;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
@@ -26,7 +26,19 @@
       <div class="toggle-track"><div class="toggle-thumb"></div></div>
     </div>
   </div>
+  <div class="mobile-menu-btn" id="mobileMenuBtn">
+    <i class="fas fa-bars"></i>
+  </div>
 </nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
 
 <!-- PROJECTS SECTION -->
 <div class="sec" id="projects">
@@ -101,10 +113,50 @@
         <span>localStorage</span>
       </div>
     </div>
+
+    <div class="project-card reveal" onclick="openModal('Responsive Design')">
+      <div class="project-icon">📱</div>
+      <div class="project-day">DAY 16</div>
+      <h3>Responsive Design</h3>
+      <p>Full mobile-first overhaul using media queries, fluid grids, and clamp(). Every page adapts perfectly from 320px to 4K.</p>
+      <div class="project-tags">
+        <span>Media Queries</span>
+        <span>Mobile-First</span>
+        <span>clamp()</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal" onclick="openModal('Glassmorphism Modal System')">
+      <div class="project-icon">💎</div>
+      <div class="project-day">DAY 17</div>
+      <h3>Glassmorphism Modal System</h3>
+      <p>Custom modal system with backdrop blur, smooth animations, and keyboard navigation. Click any project card to see it in action!</p>
+      <div class="project-tags">
+        <span>Glassmorphism</span>
+        <span>backdrop-filter</span>
+        <span>JavaScript</span>
+        <span>Modal</span>
+      </div>
+    </div>
+
+    <!-- ★ DAY 18 — NEW CARD ★ -->
+    <div class="project-card reveal project-card--featured" onclick="openModal('Vercel Deployment')">
+      <div class="project-featured-badge">🆕 TODAY</div>
+      <div class="project-icon">🚀</div>
+      <div class="project-day">DAY 18</div>
+      <h3>Vercel Deployment</h3>
+      <p>Took the entire portfolio from localhost to a real live URL on Vercel. Connected GitHub, auto-deploy on every push, custom domain ready.</p>
+      <div class="project-tags">
+        <span>Vercel</span>
+        <span>CI/CD</span>
+        <span>Git</span>
+        <span>Deploy</span>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- MODAL for Day 15 -->
+<!-- MODAL -->
 <div class="modal-overlay" id="projectModal">
   <div class="modal-container">
     <button class="modal-close" id="closeModal">&times;</button>
@@ -119,7 +171,7 @@
 </div>
 
 <!-- FOOTER -->
-<footer>Built line by line · <em>Zero&lt;/&gt;Knowledge</em> · Day 15 of 100 · From Zero to Hero</footer>
+<footer>Built line by line · <em>Zero&lt;/&gt;Knowledge</em> · Day 18 of 100 · From Zero to Hero</footer>
 
 <script src="script.js"></script>
 </body>
