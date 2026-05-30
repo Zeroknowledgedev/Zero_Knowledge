@@ -57,7 +57,11 @@
 
 /* ═══ RESET ═══ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{
+  scroll-behavior: smooth;
+  /* DAY 19: offset anchor scroll so sections don't hide under the fixed navbar */
+  scroll-padding-top:72px;
+}
 body{
   font-family:'Exo 2',sans-serif;
   background:var(--bg-primary);
@@ -467,6 +471,8 @@ code{font-family:'Space Mono',monospace;font-size:.82rem;color:var(--accent);}
 .f5{background:linear-gradient(90deg,#f05032,#d94c2e);}
 /* NEW — Vercel skill bar: black to white gradient */
 .f6{background:linear-gradient(90deg,#555,#ffffff);}
+/* NEW — Smooth Scroll skill bar: cyan to purple gradient */
+.f7{background:linear-gradient(90deg,#00c8ff,#a855f7);}
 
 /* ═══ PROJECTS ═══ */
 .projects-grid{
@@ -684,37 +690,67 @@ footer em{color:var(--accent);font-style:normal;}
 
 /* ═══ RESPONSIVE ═══ */
 @media(max-width:768px){
+  /* ── Navbar ── */
   .nav-links{display:none;}
   .mobile-menu-btn{display:block;}
-  .nav-inner{justify-content:center;}
-  .theme-toggle{position:absolute;right:70px;top:18px;}
+  .nav-inner{justify-content:center;position:relative;padding:0 1rem;}
+  /* Hide DARK/LIGHT text label — toggle track alone is enough on mobile */
+  .toggle-label{display:none;}
+  .theme-toggle{position:absolute;right:52px;top:50%;transform:translateY(-50%);gap:.3rem;}
+  .mobile-menu-btn{position:absolute;right:12px;top:50%;transform:translateY(-50%);}
+
+  /* ── Hero ── */
+  .hero{padding:6rem 0 4rem;background-position:center center;}
+  .hero-content{padding-left:1.25rem;padding-right:1.25rem;max-width:100%;}
+  .hero-name{font-size:clamp(2.6rem,11vw,3.8rem);}
+
+  /* Deploy banner — full width, wrap */
+  .deploy-banner{display:flex;flex-wrap:wrap;gap:.4rem;font-size:.68rem;padding:.5rem .75rem;width:100%;box-sizing:border-box;}
+  .deploy-link{display:none;}
+
+  /* CTA buttons */
+  .cta-group{flex-direction:column;gap:.75rem;width:100%;}
+  .btn-p,.btn-o{width:100%;justify-content:center;text-align:center;}
+
+  /* Badges */
+  .hero-badges{flex-wrap:wrap;gap:.6rem;}
+  .badge{font-size:.65rem;padding:.25rem .6rem;}
+
+  /* Sections */
+  .sec{padding:4rem 1.25rem;}
   .about-grid{grid-template-columns:1fr;gap:2.5rem;}
   .contact-grid{grid-template-columns:1fr;gap:2rem;}
-  .hero{padding:6rem 0 4rem;background-position:right center;}
-  .hero-content{padding-left:1.25rem;padding-right:1rem;}
-  .hero-name{font-size:clamp(2.4rem,10vw,3.5rem);}
-  .cta-group{flex-direction:column;gap:.75rem;}
-  .btn-p,.btn-o{width:100%;justify-content:center;}
-  .hero-badges{flex-wrap:wrap;gap:0.8rem;}
   .projects-grid{grid-template-columns:1fr;}
   .stats{gap:0.8rem;}
   .stat{padding:0.8rem;}
   .stat-num{font-size:1.5rem;}
-  .sec{padding:4rem 1.5rem;}
-  .deploy-banner{flex-wrap:wrap;gap:.5rem;font-size:.7rem;}
 }
 
 @media(max-width:480px){
-  .hero-tag{font-size:0.6rem;}
+  /* Hero text */
+  .hero-tag{font-size:.58rem;letter-spacing:.8px;padding:.28rem .7rem;}
   .hero-greeting{font-size:1rem;}
-  .hero-role{font-size:0.75rem;}
-  .typewriter-wrap{font-size:0.9rem;}
-  .badge{font-size:0.7rem;}
-  .modal-container{padding:1.5rem;}
-  .modal-title{font-size:1.3rem;}
-  .social-link{padding:0.8rem;}
-  .social-link i{font-size:1.2rem;}
-  .social-name{font-size:0.85rem;}
-  .deploy-banner{font-size:.65rem;}
-  .deploy-link{display:none;}
+  .hero-name{font-size:clamp(2.2rem,12vw,3rem);}
+  .hero-role{font-size:.72rem;letter-spacing:2.5px;}
+  .typewriter-wrap{font-size:.88rem;}
+
+  /* Badges */
+  .badge{font-size:.6rem;padding:.22rem .5rem;gap:.3rem;}
+  .hero-badges{gap:.5rem;}
+
+  /* Deploy banner */
+  .deploy-banner{font-size:.62rem;padding:.45rem .65rem;}
+  .deploy-text{font-size:.62rem;}
+
+  /* Buttons */
+  .btn-p,.btn-o{font-size:.82rem;padding:.7rem 1.25rem;}
+
+  /* Modal */
+  .modal-container{padding:1.25rem;}
+  .modal-title{font-size:1.25rem;}
+
+  /* Contact */
+  .social-link{padding:.75rem;}
+  .social-link i{font-size:1.1rem;}
+  .social-name{font-size:.85rem;}
 }
