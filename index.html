@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Zero&lt;/&gt;Knowledge — Home</title>
+  <title>Zero&lt;/&gt;Knowledge — Day 19</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:ital,wght@0,300;0,400;0,600;0,800;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -11,15 +11,17 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ══════════════════════════════════
+     NAVBAR  (anchor links — Day 19)
+══════════════════════════════════ -->
 <nav>
   <div class="nav-inner">
-    <a class="nav-logo" href="index.html">Zero&lt;<span>/</span>&gt;Knowledge</a>
+    <a class="nav-logo" href="#hero">Zero&lt;<span>/</span>&gt;Knowledge</a>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#hero"   class="nav-link active">Home</a></li>
+      <li><a href="#about"  class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
     <div class="theme-toggle" id="themeToggle">
       <span class="toggle-label" id="themeLabel">DARK</span>
@@ -34,17 +36,19 @@
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
   <ul class="mobile-nav-links">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#hero"     class="nav-link active">Home</a></li>
+    <li><a href="#about"    class="nav-link">About</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#contact"  class="nav-link">Contact</a></li>
   </ul>
 </div>
 
-<!-- HERO -->
+<!-- ══════════════════════════════════
+     SECTION 1 — HERO
+══════════════════════════════════ -->
 <section class="hero" id="hero">
   <div class="hero-content">
-    <div class="hero-tag">DAY 18 OF 100 — BUILDING IN PUBLIC</div>
+    <div class="hero-tag">DAY 19 OF 100 — BUILDING IN PUBLIC</div>
     <p class="hero-greeting">Hi, I'm</p>
     <h1 class="hero-name">
       <span class="zero">ZERO</span><br>
@@ -53,27 +57,232 @@
     <p class="hero-role">Web Developer</p>
     <div class="typewriter-wrap"><span id="tw"></span></div>
 
-    <!-- Vercel Deploy Banner -->
     <div class="deploy-banner">
       <div class="deploy-dot"></div>
-      <span class="deploy-text">🚀 Now Live on Vercel — <strong>Deployed Today</strong></span>
+      <span class="deploy-text">🚀 Now Live on Vercel — <strong>Deployed on Day 18</strong></span>
       <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" class="deploy-link">vercel.com ↗</a>
     </div>
 
     <div class="cta-group">
-      <a href="projects.html" class="btn-p">View Projects ↗</a>
-      <a href="contact.html" class="btn-o">Get In Touch</a>
+      <a href="#projects" class="btn-p">View Projects ↗</a>
+      <a href="#contact"  class="btn-o">Get In Touch</a>
     </div>
     <div class="hero-badges">
       <div class="badge"><i class="fas fa-code"></i> Clean UI</div>
       <div class="badge"><i class="fas fa-mobile-alt"></i> Mobile-First</div>
       <div class="badge"><i class="fas fa-rocket"></i> Vercel Deploy</div>
+      <div class="badge"><i class="fas fa-scroll"></i> One-Page Scroll</div>
     </div>
   </div>
 </section>
 
+<!-- ══════════════════════════════════
+     SECTION 2 — ABOUT
+══════════════════════════════════ -->
+<div class="alt-bg">
+<div class="sec" id="about">
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <div class="sec-label">// ABOUT ME</div>
+      <div class="divider"></div>
+      <h2 class="sec-title">From Zero to <span style="color:var(--accent)">Hero</span></h2>
+      <p>I started this journey with absolutely zero knowledge of web development. No prior experience. No CS degree. Just a decision to learn and build in public every single day for 100 days.</p>
+      <p>Each day I tackle a real concept, build something that proves I've learned it, and ship it. The website you're looking at <em>is</em> the story — every feature was added line by line, day by day.</p>
+      <p>Today is Day 19. I just converted this portfolio into a seamless <strong style="color:var(--accent)">One-Page Scroll</strong> — no more page reloads, just smooth cinematic scrolling!</p>
+      <div class="stats">
+        <div class="stat"><span class="stat-num">19</span><span class="stat-lbl">Days Done</span></div>
+        <div class="stat"><span class="stat-num">81</span><span class="stat-lbl">To Go</span></div>
+        <div class="stat"><span class="stat-num">∞</span><span class="stat-lbl">Ambition</span></div>
+      </div>
+    </div>
+    <div class="skills reveal" style="transition-delay:.15s" id="skills-panel">
+      <h3>Skills Unlocked So Far</h3>
+      <div class="sk"><div class="sk-meta"><span class="sk-name">HTML5</span><span class="sk-pct" id="p1">0%</span></div><div class="sk-track"><div class="sk-fill f1" id="b1" data-to="85"></div></div></div>
+      <div class="sk"><div class="sk-meta"><span class="sk-name">CSS3 + Animations</span><span class="sk-pct" id="p2">0%</span></div><div class="sk-track"><div class="sk-fill f2" id="b2" data-to="78"></div></div></div>
+      <div class="sk"><div class="sk-meta"><span class="sk-name">JavaScript ES6+</span><span class="sk-pct" id="p3">0%</span></div><div class="sk-track"><div class="sk-fill f3" id="b3" data-to="62"></div></div></div>
+      <div class="sk"><div class="sk-meta"><span class="sk-name">UI / UX Design</span><span class="sk-pct" id="p4">0%</span></div><div class="sk-track"><div class="sk-fill f4" id="b4" data-to="70"></div></div></div>
+      <div class="sk"><div class="sk-meta"><span class="sk-name">Git & Version Control</span><span class="sk-pct" id="p5">0%</span></div><div class="sk-track"><div class="sk-fill f5" id="b5" data-to="55"></div></div></div>
+      <div class="sk"><div class="sk-meta"><span class="sk-name">Vercel Deployment</span><span class="sk-pct" id="p6">0%</span></div><div class="sk-track"><div class="sk-fill f6" id="b6" data-to="72"></div></div></div>
+      <div class="sk"><div class="sk-meta"><span class="sk-name">Smooth Scroll / One-Pager</span><span class="sk-pct" id="p7">0%</span></div><div class="sk-track"><div class="sk-fill f7" id="b7" data-to="80"></div></div></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════════════════════════
+     SECTION 3 — PROJECTS
+══════════════════════════════════ -->
+<div class="sec" id="projects">
+  <div class="sec-label reveal">// MY WORK</div>
+  <div class="divider reveal"></div>
+  <h2 class="sec-title reveal">What I've Built</h2>
+  <p class="sec-sub reveal">Each project = one day. A real skill learned, then shipped immediately.</p>
+
+  <div class="projects-grid">
+    <div class="project-card reveal" onclick="openModal('Portfolio Foundation')">
+      <div class="project-icon">📁</div>
+      <div class="project-day">DAY 01</div>
+      <h3>Portfolio Foundation</h3>
+      <p>First-ever HTML page. Semantic structure, CSS reset, and a navbar that actually works.</p>
+      <div class="project-tags"><span>HTML5</span><span>CSS3</span></div>
+    </div>
+
+    <div class="project-card reveal" onclick="openModal('Typewriter Effect')">
+      <div class="project-icon">⌨️</div>
+      <div class="project-day">DAY 07</div>
+      <h3>Typewriter Effect</h3>
+      <p>Pure JS typewriter cycling multiple phrases with configurable speed and cursor blink.</p>
+      <div class="project-tags"><span>JavaScript</span><span>DOM</span></div>
+    </div>
+
+    <div class="project-card reveal" onclick="openModal('Scroll Reveal System')">
+      <div class="project-icon">🌊</div>
+      <div class="project-day">DAY 10</div>
+      <h3>Scroll Reveal System</h3>
+      <p>IntersectionObserver-powered reveal animations with staggered delays.</p>
+      <div class="project-tags"><span>IntersectionObserver</span><span>CSS</span></div>
+    </div>
+
+    <div class="project-card reveal" onclick="openModal('Animated Skill Bars')">
+      <div class="project-icon">📊</div>
+      <div class="project-day">DAY 12</div>
+      <h3>Animated Skill Bars</h3>
+      <p>CSS + JS skill bars that animate when scrolled into view with live counters.</p>
+      <div class="project-tags"><span>CSS Animation</span><span>JavaScript</span></div>
+    </div>
+
+    <div class="project-card reveal" onclick="openModal('Glassmorphism Modals')">
+      <div class="project-icon">💎</div>
+      <div class="project-day">DAY 13</div>
+      <h3>Glassmorphism Modals</h3>
+      <p>Dynamic modals with backdrop blur, slide-up animation, and keyboard navigation.</p>
+      <div class="project-tags"><span>Glassmorphism</span><span>backdrop-filter</span></div>
+    </div>
+
+    <div class="project-card reveal" onclick="openModal('Light / Dark Mode')">
+      <div class="project-icon">🌙</div>
+      <div class="project-day">DAY 14</div>
+      <h3>Light / Dark Mode</h3>
+      <p>Full theme switching via CSS variables + localStorage. One click, total transformation.</p>
+      <div class="project-tags"><span>CSS Variables</span><span>localStorage</span></div>
+    </div>
+
+    <div class="project-card reveal" onclick="openModal('Responsive Design')">
+      <div class="project-icon">📱</div>
+      <div class="project-day">DAY 16</div>
+      <h3>Responsive Design</h3>
+      <p>Full mobile-first overhaul using media queries, fluid grids, and clamp(). Every page adapts perfectly from 320px to 4K.</p>
+      <div class="project-tags"><span>Media Queries</span><span>Mobile-First</span><span>clamp()</span></div>
+    </div>
+
+    <div class="project-card reveal" onclick="openModal('Glassmorphism Modal System')">
+      <div class="project-icon">💎</div>
+      <div class="project-day">DAY 17</div>
+      <h3>Glassmorphism Modal System</h3>
+      <p>Custom modal system with backdrop blur, smooth animations, and keyboard navigation. Click any project card to see it!</p>
+      <div class="project-tags"><span>Glassmorphism</span><span>backdrop-filter</span><span>JavaScript</span></div>
+    </div>
+
+    <div class="project-card reveal" onclick="openModal('Vercel Deployment')">
+      <div class="project-icon">🚀</div>
+      <div class="project-day">DAY 18</div>
+      <h3>Vercel Deployment</h3>
+      <p>Took the entire portfolio from localhost to a real live URL. Connected GitHub, auto-deploy on every push.</p>
+      <div class="project-tags"><span>Vercel</span><span>CI/CD</span><span>Git</span></div>
+    </div>
+
+    <!-- ★ DAY 19 — NEW CARD ★ -->
+    <div class="project-card reveal project-card--featured" onclick="openModal('Smooth Scroll One-Pager')">
+      <div class="project-featured-badge">🆕 TODAY</div>
+      <div class="project-icon">🖱️</div>
+      <div class="project-day">DAY 19</div>
+      <h3>Smooth Scroll One-Pager</h3>
+      <p>Merged all 4 HTML pages into a single seamless scroll experience. No more page reloads — just cinematic anchor navigation.</p>
+      <div class="project-tags">
+        <span>Anchor Links</span>
+        <span>scroll-behavior</span>
+        <span>IntersectionObserver</span>
+        <span>Active Nav</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     SECTION 4 — CONTACT
+══════════════════════════════════ -->
+<div class="alt-bg">
+<div class="sec" id="contact">
+  <div class="sec-label reveal">// GET IN TOUCH</div>
+  <div class="divider reveal"></div>
+  <h2 class="sec-title reveal">Let's Connect</h2>
+  <p class="sec-sub reveal">Following the journey? Want to collaborate? Drop a message.</p>
+
+  <div class="contact-grid">
+    <div class="contact-form reveal">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="Zero Knowledge" id="contactName">
+      </div>
+      <div class="form-group">
+        <label>Your Email</label>
+        <input type="email" placeholder="youremail@gmail.com" id="contactEmail">
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea rows="4" placeholder="What's on your mind?" id="contactMessage"></textarea>
+      </div>
+      <button class="btn-p" onclick="sendToGmail()">Send to Gmail ↗</button>
+    </div>
+
+    <div class="contact-info reveal" style="transition-delay:.15s">
+      <p>I document everything publicly. If you're on a similar journey — learning from scratch — I want to hear from you.</p>
+      <div class="social-links-list">
+        <a href="https://www.instagram.com/zero_knowledge.dev/" class="social-link" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram"></i>
+          <div>
+            <div class="social-name">Instagram</div>
+            <div class="social-handle">@zero_knowledge.dev</div>
+          </div>
+        </a>
+        <a href="https://youtube.com/@zeroknowledge-g6w" class="social-link" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-youtube"></i>
+          <div>
+            <div class="social-name">YouTube</div>
+            <div class="social-handle">@ZeroKnowledge</div>
+          </div>
+        </a>
+        <a href="https://github.com/Zeroknowledgedev" class="social-link" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+          <div>
+            <div class="social-name">GitHub</div>
+            <div class="social-handle">@Zeroknowledgedev</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════════════════════════
+     MODAL
+══════════════════════════════════ -->
+<div class="modal-overlay" id="projectModal">
+  <div class="modal-container">
+    <button class="modal-close" id="closeModal">&times;</button>
+    <div class="modal-icon" id="modalIcon">📁</div>
+    <div class="modal-day" id="modalDay">DAY 01</div>
+    <h2 class="modal-title" id="modalTitle">Project Title</h2>
+    <p class="modal-description" id="modalDescription">Project description goes here...</p>
+    <div class="modal-tech" id="modalTech"></div>
+    <div class="modal-lessons" id="modalLessons"></div>
+    <button class="modal-live-btn" id="modalLiveBtn">🔗 View Live Demo</button>
+  </div>
+</div>
+
 <!-- FOOTER -->
-<footer>Built line by line · <em>Zero&lt;/&gt;Knowledge</em> · Day 18 of 100 · From Zero to Hero</footer>
+<footer>Built line by line · <em>Zero&lt;/&gt;Knowledge</em> · Day 19 of 100 · From Zero to Hero</footer>
 
 <script src="script.js"></script>
 </body>
